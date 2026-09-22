@@ -3,7 +3,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 
 class GreeterHandler(BaseHTTPRequestHandler):
     def do_GET(self):
-        message =  "Hello, my name is Rida!<br>Welcome to my Docker application!"
+        message = "Hey, my name is Rida!<br>Welcome to my Docker application!"
 
         self.send_response(200)
         self.send_header("Content-type", "text/html; charset=utf-8")
